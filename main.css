@@ -1,19 +1,68 @@
-
+* { box-sizing: border-box;}
   
   body {
     height: 100vh;
     margin: 0;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  #slots {
+}
+
+.slots {
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 4px;
+    padding: 4px;
+    grid-template-columns: repeat(3, 10vmin);
     display: grid;
-    background-color: lightgrey;
-    border-radius: 5vmin;
+    background-color: aliceblue;
+    width: 80vmin;
+}
+
+.slots > div {
+    /* background-color: red; */
+
+}
+
+  .window {
+    background-color: green;
+    /* grid-column-gap: 4px; */
+    padding: 4px;  
+
+  }
+
+  .boxes {
+    background-color: white;
+    height: 15vmin; 
+
+  }
+
+
+  #button {
+    width: 15vmin;
+    margin: 2vmin;
+    background-color:white;
+    color: black;
+    border: 1vmin solid black;
+    border-radius: 40%;
+    font-size: 3vmin;
+    outline: none;
+    align-items: center;
+  }
+
+  #play {
+    background-color: darkred;
+    color: white;
+
   }
 
   
+
+  
+
+
 
 
 
