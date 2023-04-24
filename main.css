@@ -27,15 +27,16 @@
 }
 
   .window {
-    background-color: green;
+    background-color: darkred;
     /* grid-column-gap: 4px; */
     padding: 4px;  
+    height: 30vmin;
 
   }
 
   .boxes {
     background-color: white;
-    height: 15vmin; 
+    height: 29vmin; 
 
   }
 
@@ -50,6 +51,7 @@
     font-size: 3vmin;
     outline: none;
     align-items: center;
+    
   }
 
   #play {
