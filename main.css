@@ -1,0 +1,23 @@
+
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  #slots {
+    display: grid;
+    background-color: lightgrey;
+    border-radius: 5vmin;
+  }
+
+  
+
+
+
+ 
+
+
+
