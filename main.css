@@ -29,7 +29,7 @@
 }
 
   #window1, #window2, #window3 {
-    background-color: darkred;
+    background-color: rgb(232, 224, 224);
     /* grid-column-gap: 4px; */
     padding: 4px;  
     height: 30vmin;
@@ -37,12 +37,12 @@
 
   }
 
-  #boxes {
+  /* #boxes {
     background-color: white;
     height: 29vmin; 
     
 
-  }
+  } */
 
 
   #button {
