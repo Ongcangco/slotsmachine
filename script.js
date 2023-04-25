@@ -7,12 +7,15 @@ const numbers = [
     '5'
 ];
 
+const window = document.querySelectorAll(".window");
+
 
 
 /*----- app's state (variables) -----*/
 let board; //array of 3 windows//
 let turn; //1 or -1//
 let winner: //null = loser; 1 or -1 winner; 
+// var random = Math.floor(Math.random()* 5) + 1;
 
 /*----- cached element references -----*/
 winningCombos = [
@@ -32,7 +35,14 @@ function render() {
     //Hide/show UI elements (controls)
     renderControls();
   }
-function changeText() {
-    var message = document.getElementById('message');
-    message.innerHTML = "clicked";
-}
+
+
+//   function changeText() {
+//     var message = document.getElementById('message');
+//     message.innerHTML = "click";
+// }
+
+
+
+
+
