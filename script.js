@@ -10,7 +10,7 @@ const numbers = [
 /*----- app's state (variables) -----*/
 let game;
 let slots; //array of 3 windows//
-let winner; //null = loser; 1 or -1 winner; 
+let winner; 
 // var random = Math.floor(Math.random()* 5) + 1;
 
 /*----- cached element references -----*/
@@ -22,39 +22,37 @@ winningCombos = [
     [5, 5, 5],
   ];
 
-const resetBtn = document.getElementById('reset')
-/*----- event listeners -----*/
+  /*----- event listeners -----*/
+  
+  const resetBtn = document.getElementById('reset')
+  
+resetBtn.addEventListener('click', resetGame)
 
-
-resetBtn.addEventListener('click', () => {
-    console.log('reset button clicked')
-});
 
 function resetGame() {
-    slots = null;
-    window1, window2, window3 = null;
-}
+    const window1 = getElementById('window1');
+    const window2 = getElementById('window2');
+    const window3 = getElementById('window3');
 
+    window1.innerHTML = ``;
+    window2.innerHTML = ``;
+    window3.innerHTML = ``;
+
+
+}
 /*----- functions -----*/
-class SlotsMachineGame {
-    constructor(slotsElement, messageElement) {
-        this.slotsElement = slotsElement;
-        this.messageElement = messageElement;
-    }
-}
 
-// init();
-
-// function init() {
-//     game = new SlotsMachineGame;
     
-    // slots = [ window1 = 0, window2 = 0, window3 = 0]
-    // render();
-
-
+    
 const playBtn = document.getElementById('play');
-playBtn.addEventListener('click', play) 
-
+    playBtn.addEventListener('click', play) 
+    
+class SlotsMachineGame {
+        constructor(slotsElement, messageElement) {
+            this.slotsElement = slotsElement;
+            this.messageElement = messageElement;
+        }
+    }
 
 function getRandomNumber() {
     return Math.floor(Math.random() * 5) + 1;
@@ -95,12 +93,10 @@ function showLoserMessage () {
     
 }
 
-//  function render() {}
-// // renderBoard()
- 
-// function renderMessage() {
-//     const msg = document.getElementById('message');
- 
+
+
+
+
 
   
 
