@@ -7,13 +7,8 @@ const numbers = [
     '5'
 ];
 
-
-
-//const window = document.querySelectorAll(".window");
-
-
-
 /*----- app's state (variables) -----*/
+let game;
 let slots; //array of 3 windows//
 let turn; //1 or -1//
 let winner; //null = loser; 1 or -1 winner; 
@@ -27,27 +22,43 @@ winningCombos = [
     [4, 4, 4],
     [5, 5, 5],
   ];
-const playBtn = document.getElementById('play'); 
+
 const resetBtn = document.getElementById('reset')
 /*----- event listeners -----*/
-playBtn.addEventListener("click", function() {
+
+
+resetBtn.addEventListener('click', () => {
+    console.log('reset button clicked')
 });
 
-resetBtn.addEventListener('click', init);
-
-/*----- functions -----*/
-init();
-function init() {
+function resetGame() {
     slots = null;
-    turn = 1;
-    winner = null;
-    
+    window1, window2, window3 = null;
 }
 
+/*----- functions -----*/
+class SlotsMachineGame {
+    constructor(slotsElement, messageElement) {
+        this.slotsElement = slotsElement;
+        this.messageElement = messageElement;
+    }
+}
+
+// init();
+
+// function init() {
+//     game = new SlotsMachineGame;
+    
+    // slots = [ window1 = 0, window2 = 0, window3 = 0]
+    // render();
+
+
+const playBtn = document.getElementById('play');
+playBtn.addEventListener('click', play) 
 
 
 function getRandomNumber() {
-    return Math.floor(math.random() * 5) + 1;
+    return Math.floor(Math.random() * 5) + 1;
 }
 
 function getElementById(id) {
@@ -68,16 +79,29 @@ function play() {
     window3.innerHTML = `${num3}`;
 
     if (num1 === num2 && num1 === num3) {
-        showMessage();
+        showWinMessage();
     } else {
-        showMessage2();
+        showLoserMessage();
 
 }
+}
+
+function showWinMessage () {
+    message.innerHTML = "Congratulations You Won!"
+}
+
+function showLoserMessage () {
+    message.innerHTML = "Ha Ha What a Loser!"
+   
+    
 }
 
  function render() {}
 // renderBoard()
-// function renderMessage()
+ 
+function renderMessage() {
+    const msg = document.getElementById('message');
+ }
 //     //Hide/show UI elements (controls)
 // function renderControls();
   
