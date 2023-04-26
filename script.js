@@ -10,7 +10,6 @@ const numbers = [
 /*----- app's state (variables) -----*/
 let game;
 let slots; //array of 3 windows//
-let turn; //1 or -1//
 let winner; //null = loser; 1 or -1 winner; 
 // var random = Math.floor(Math.random()* 5) + 1;
 
@@ -96,18 +95,14 @@ function showLoserMessage () {
     
 }
 
- function render() {}
-// renderBoard()
+//  function render() {}
+// // renderBoard()
  
-function renderMessage() {
-    const msg = document.getElementById('message');
- }
-//     //Hide/show UI elements (controls)
-// function renderControls();
+// function renderMessage() {
+//     const msg = document.getElementById('message');
+ 
+
   
 
 
-//   function changeText() {
-//     var message = document.getElementById('message');
-//     message.innerHTML = "click";
-// 
+
