@@ -1,11 +1,5 @@
 /*----- constants -----*/ 
-const numbers = [
-    '1',
-    '2',
-    '3',
-    '4',
-    '5'
-];
+
 const symbols = [
     '&#x1F353', '&#x1F4A9', '&#x1F34D', '&#x1F349', '&#x1F480' 
 ]
@@ -73,12 +67,12 @@ function play() {
 }
 
 function showWinMessage () {
-    message.innerHTML = "Congratulations You Won!"
+    message.innerHTML = "Congratulations You Won!&#x1F389"
     
 }
 
 function showLoserMessage () {
-    message.innerHTML = "Ha Ha What a Loser!"
+    message.innerHTML = "Ha Ha What a Loser! &#x1F602"
 
 }
 
