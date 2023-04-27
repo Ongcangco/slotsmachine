@@ -6,7 +6,9 @@ const numbers = [
     '4',
     '5'
 ];
-
+var symbols = [
+    '&#x1F353', '&#x1F4A9', '&#x1F34D', '&#x1F349', '&#x1F480' 
+]
 /*----- app's state (variables) -----*/
 let game;
 let slots; //array of 3 windows//
@@ -37,7 +39,8 @@ function resetGame() {
     window1.innerHTML = ``;
     window2.innerHTML = ``;
     window3.innerHTML = ``;
-
+    
+    message.textContent = "Let's Play Again!"
 
 }
 /*----- functions -----*/
@@ -55,7 +58,7 @@ class SlotsMachineGame {
     }
 
 function getRandomNumber() {
-    return Math.floor(Math.random() * 5) + 1;
+    return symbols[Math.floor(Math.random() * symbols.length)] 
 }
 
 function getElementById(id) {
@@ -85,6 +88,7 @@ function play() {
 
 function showWinMessage () {
     message.innerHTML = "Congratulations You Won!"
+    
 }
 
 function showLoserMessage () {

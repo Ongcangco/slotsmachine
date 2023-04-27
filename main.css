@@ -13,35 +13,38 @@
 
 #slots {
     height: 100%;
-    
+    width:400px;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 4px;
-    padding: 4px;
+    grid-column-gap: 80px;
+    padding: 8px;
     grid-template-columns: repeat(3, 10vmin);
     display: grid;
     background-color: aliceblue;
-}
-
-#slots > div {
-    /* background-color: red; */
-
-}
-
+    margin-left: -5%;
+  }
+  
+  
+  
+ 
   #window1, #window2, #window3 {
     background-color: rgb(232, 224, 224);
-    /* grid-column-gap: 4px; */
     padding: 4px;  
     height: 30vmin;
+    width: 80px;
+    font-size: 80px;
+    text-align: center;
+    justify-content: center;
+    width: fit-content;
     
-   
-
+    
   }
 
 
 
+
   #button {
-    width: 15vmin;
+    width: 25vmin;
     margin: 2vmin;
     background-color:white;
     color: black;
@@ -50,15 +53,20 @@
     font-size: 3vmin;
     outline: none;
     align-items: center;
+    block-size: auto;
     
   }
 
   #play {
     background-color: darkred;
     color: white;
-
+    height: 20vmin;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 10%;
   }
 
+  
 
   #message {
     color: red;
@@ -66,9 +74,7 @@
   }
 
 
-  num{
-    height: 500px;
-  }
+  
 
   
 
