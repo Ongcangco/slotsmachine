@@ -6,23 +6,17 @@ const numbers = [
     '4',
     '5'
 ];
-var symbols = [
+const symbols = [
     '&#x1F353', '&#x1F4A9', '&#x1F34D', '&#x1F349', '&#x1F480' 
 ]
 /*----- app's state (variables) -----*/
 let game;
 let slots; //array of 3 windows//
 let winner; 
-// var random = Math.floor(Math.random()* 5) + 1;
+
 
 /*----- cached element references -----*/
-winningCombos = [
-    [1, 1, 1],
-    [2, 2, 2],
-    [3, 3, 3],
-    [4, 4, 4],
-    [5, 5, 5],
-  ];
+
 
   /*----- event listeners -----*/
   
@@ -44,18 +38,10 @@ function resetGame() {
 
 }
 /*----- functions -----*/
-
-    
-    
+  
 const playBtn = document.getElementById('play');
     playBtn.addEventListener('click', play) 
     
-class SlotsMachineGame {
-        constructor(slotsElement, messageElement) {
-            this.slotsElement = slotsElement;
-            this.messageElement = messageElement;
-        }
-    }
 
 function getRandomNumber() {
     return symbols[Math.floor(Math.random() * symbols.length)] 
@@ -93,8 +79,7 @@ function showWinMessage () {
 
 function showLoserMessage () {
     message.innerHTML = "Ha Ha What a Loser!"
-   
-    
+
 }
 
 
