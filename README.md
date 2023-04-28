@@ -7,6 +7,11 @@ Slotsmachine;
 Technology:
 -HTML, CSS, JS
 
+Visual:
+<img src="https://user-images.githubusercontent.com/129900118/235047496-18dcda22-e60f-4edc-839d-479ddd8da991.png" height="100">
+<img src="https://user-images.githubusercontent.com/129900118/235047760-1dd73b81-831d-4acb-9290-2f070d32f097.png" height="100">
+<img src="https://user-images.githubusercontent.com/129900118/235047752-4daa7692-2331-41c9-92cd-af0f1ab170ae.png" height="100">
+
 Getting Started:
 https://ongcangco.github.io/slotsmachine/
 -Play til you win, based on luck! Try to get 3 matching symbols across the boards.
