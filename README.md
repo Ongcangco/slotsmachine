@@ -23,4 +23,14 @@ Icebox Items:
 -Definitely would like to add sounds to the buttons when clicked, or when you lose/win.
 
 
+Biggest Challenge:
+-First 2 days were really just going over the things I wasn't super clear on. Had a hard time wanting there to be a clear cut outline of what I needed to do, but there will always be a million ways to code one thing. 
+-Pseudocode I wrote based on our example pseudocodes and that didn't work for me. Different games, need different attentions.
+-Comparing myself to where and what I think I should be capable of versus what I'm accomplishing.
+
+Takeaways:
+-There's more than one way to write code.
+-
+
+
 

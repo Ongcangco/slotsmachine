@@ -11,8 +11,7 @@ let winner;
 
   /*----- event listeners -----*/
   
-const resetBtn = document.getElementById('reset')
-  
+const resetBtn = document.getElementById('reset') 
 resetBtn.addEventListener('click', resetGame)
 
 const playBtn = document.getElementById('play');
